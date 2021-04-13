@@ -18,8 +18,7 @@ void main(void) {
 
     // todo #11 DONE
     vec4 color1 = texture2D(uTexture, fragmentShader+(cos(uTempAlpha)/(3.14)/1.5));
-    //vec4 color2 = texture2D(uTexture, fragmentShader+(cos(uTempAlpha)/(3.14)/1.5));
-    gl_FragColor = color1;//*color2; 
+    gl_FragColor = color1; 
     gl_FragColor.a = uAlpha;
 
 }
